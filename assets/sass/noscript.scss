@@ -6,23 +6,51 @@
 @import 'libs/html-grid';
 
 /*
-	Stellar by HTML5 UP
+	Astral by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Header */
+/* Wrapper */
 
-	#header {
-		body.is-preload & {
-			&.alt {
-				> * {
-					opacity: 1;
-				}
+	#wrapper {
+		opacity: 1 !important;
+	}
 
-				.logo {
-					@include vendor('transform', 'none');
+/* Nav */
+
+	#nav {
+		a {
+			opacity: 1.0;
+
+			&:before,
+			&:after {
+				display: none;
+			}
+
+			span {
+				top: 0;
+				opacity: 1.0;
+
+				&:after {
+					display: none;
 				}
+			}
+		}
+	}
+
+/* Main */
+
+	#main {
+		background: none;
+		box-shadow: none;
+
+		> .panel {
+			background: #ffffff;
+			margin-bottom: 2em;
+
+			&:last-child {
+				margin-bottom: 0;
 			}
 		}
 	}
